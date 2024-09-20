@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resumeBuilder.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder By ASIFA KHAN</h1>
+        
+        <form id="resume-form">
+            <div class="section">
+                <h2>Personal Information</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+
+                <label for="fathername">Father Name:</label>
+                <input type="text" id="fathername" placeholder="Enter your father name">
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" placeholder="Enter your degree">
+
+                <label for="year">Passing Year:</label>
+                <select id="year">
+                    <option value="">Select Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                </select>
+
+            </div>
+            <div class="section">
+                <h2>Experience</h2>
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" placeholder="Enter your job title">
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" placeholder="Enter company name">
+
+                <label for="duration">Duration:</label>
+                <select id="duration">
+                    <option value="">Select Duration</option>
+                    <option value="3Months">3 Months</option>
+                    <option value="1Year">1Year</option>
+                    <option value="2Year">2Year</option>
+                    <option value="3Year">3Year</option>
+                    <option value="4Year">4Year</option>
+                    <option value="5Year">5Year</option>
+                    <option value="6Year">6Year</option>
+                    <option value="7Year">7Year</option>
+                    <option value="8Year">8Year</option>
+                    <option value="9Year">9Year</option>
+                    <option value="10Year">10Year</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <h2>Skills</h2>
+                <input type="text" id="skill1" placeholder="Enter a skill">
+                <input type="text" id="skill2" placeholder="Enter another skill">
+                <input type="text" id="skill3" placeholder="Enter a third skill">
+            </div>
+            <div class="buttons">
+                <button type="button" class="submit-btn" onclick="generateResume()">Generate Resume</button>
+            </div>
+        </form>
+        <div id="resume-display"></div>
+    </div>
+    <script src="resumeBuilder.js"></script>
+</body>
+</html>
